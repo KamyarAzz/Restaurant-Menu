@@ -1,0 +1,125 @@
+.menuPage{
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url("../assets/images/menuBackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position: right; */
+  background-color:var(--bg-gray);
+  font-family: monospace;
+}
+    
+.title{
+  padding-top: 4.5rem;
+}
+  
+.heading1{
+  margin: 0 auto;
+  font-size: 3rem;
+  color:var(--main);
+  text-align: center;
+  letter-spacing: 0.15rem;
+}
+  
+.underline{
+  height: 4px;
+  width:80px;
+  background-color: var(--side);
+  margin: 5px auto;
+}
+  
+.slider{
+  margin-top: 5.5px;
+}
+  
+.slider a{
+  text-decoration: none;
+  color:var(--main);
+  font-size: 1rem;
+}
+  
+.slider:hover a{
+  color:var(--side); 
+  transition-duration: 0.45s; 
+}
+  
+.leftSlider{
+  position: relative;
+  left: -4%;
+}
+  
+.rightSlider{
+  position: relative;
+  right: -4%;
+}
+
+.btnContainer{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+  
+.btn{
+  background-color: var(--bg-gray);
+  font-size: 1rem;
+  border: 2px solid var(--side);
+  border-right-color: #81653b;
+  border-bottom-color: #81653b;
+  border-radius: 8px;
+  padding: 0.40rem 0.70rem;
+  letter-spacing: 0.1rem;
+  color: var(--side);
+  margin: -0.1rem 0.5rem;
+  cursor: pointer;
+}
+  
+.btn:hover{
+  background-color: var(--side);
+  color: #fff;
+  transition-duration: 0.45s;
+  transition-timing-function: linear;
+}
+  
+.menuContainer{
+  display:grid;
+  width: 95%;
+  margin: 4rem auto;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 3rem 2rem;
+  justify-content: center;
+  max-width: 1170px;
+}
+
+@media only screen and (max-width: 767px) {
+  .btn{
+    display: none
+  }
+
+  .title{
+    padding-top: 1.75rem;
+  }
+
+  .heading1{
+    font-size: 2.25rem;
+  }
+
+  .title{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .menuContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 2.5rem auto;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+  }
+}

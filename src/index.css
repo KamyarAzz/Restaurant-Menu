@@ -1,0 +1,22 @@
+:root{
+  --main:#102A42;
+  --side:#FFA500;
+  --dark-side:#81653b;
+  --bg-gray:#F1F5F8;
+  --light-blue:#617D98;
+  --transparent:rgba(255, 255, 255, 0.075);
+}
+
+*,
+::after,
+::before {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html,body,#root{
+  width: 100%;
+  height: 100%;
+}

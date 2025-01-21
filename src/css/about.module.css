@@ -1,0 +1,42 @@
+
+  
+.aboutPage {
+    background-image: url("../assets/images/orange-slices-wooden-board-with-copy-space.jpg");
+    background-size: cover;
+    font-family: monospace;
+    color: #102A42;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
+}
+
+.heading1{
+    font-size: 3rem;
+    margin-left: 4%;
+    padding-top: 2%;
+}
+
+.historyText{
+    font-size: 3rem;
+}
+
+.container{
+    display: flex;
+    margin-left: 4%;
+    font-weight: bold;
+    max-width: 45%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 767px) {
+    .container{
+        max-width: 90%;
+
+    }
+
+    .heading1{
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,75 @@
+.footer{
+    background-color: #102A42;
+    padding-top: 1.8%;
+    padding-bottom: 1.8%;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.address{
+    display: inline-block;
+    margin-left: 6%;
+    line-height: 2;
+}   
+
+.contact{
+    display: inline-block;
+    margin-left: 6%;
+    line-height: 2;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+.icon{
+    width: 1rem;
+}
+
+.link:hover{
+  color: #FFA500;
+  transition-duration:0.45s;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.pointer:hover{
+    color: #FFA500;
+    transition-duration:0.45s;
+}
+
+.logoContainer{
+  width: fit-content;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
+  align-items: center;
+}
+
+.logo{
+  /* width: 100%;
+  height: 100%; */
+  width: 5rem;
+  height: 5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo{
+    display: none;
+  }
+
+  .contact{
+    display: block;
+    margin-top: 5px;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+}

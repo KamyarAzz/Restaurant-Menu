@@ -1,0 +1,69 @@
+article{
+    display: flex;
+}
+
+.heading4{
+    display: inline-block;
+    letter-spacing: 0.10rem;
+}
+  
+.heading4:not(.price){
+    font-size: 1.1rem;
+    color: var(--main);
+    word-spacing: -0.2rem;
+}
+  
+.heading4.price{
+    color: var(--side);
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted var(--light-blue);
+  padding: 5px;
+}
+
+.info{
+    display: inline-block;
+    width: 340px;
+    padding: 1rem;
+    transform: translateY(-26px);
+}
+  
+.text{
+    color: var(--light-blue);
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+  
+.foodImage:not(.logo){
+    height: 145px;
+    width: 220px;
+    object-fit: cover;
+    border: 4.5px solid var(--side);
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+article{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    gap: 1rem;
+}
+
+.info{
+    padding: 0;
+    transform: none;
+}
+
+.text{
+    margin-top: 12px;
+}
+
+.foodImage:not(.logo){
+    order: 3;
+    width: 100%;
+}
+}

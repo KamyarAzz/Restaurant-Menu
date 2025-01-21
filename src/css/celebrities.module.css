@@ -1,0 +1,105 @@
+.slider{
+    color: white;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    margin-top: 14px;
+    margin-left: 2%;
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.link:hover{
+    color: #FFA500;
+    transition-duration: 0.45s;
+}
+
+.background{
+    position: absolute;
+    background-color: #102A42;
+    width: 100%;
+    height: 100%;
+}
+
+.red{
+    background-color: #102A42;
+    width: 90px;
+    height: 90px;
+    border-radius:50%;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    border: 5px solid white ;
+    border-left-color: orange;
+    animation: rotate 1.2s linear 0s infinite;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(0deg)}
+    to{ transform: rotate(360deg)}
+}
+
+.hidden{
+    display: none;
+}
+
+.main{
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-image: url("../assets/images/top-view-sliced-fresh-vegetables-cucumbers-tomatoes-along-with-seasonings-dark-background-food-meal-vegetable-salad.jpg");
+}
+
+.output{
+    margin-top: 2%;
+}
+
+.bottom{
+    min-width: 200px;
+    margin-left: calc(50% - 100px);
+}
+
+.navigationButton{
+    border-radius: 1px;
+    background-color: transparent;
+    width: 90px;
+    height: 28px;
+    border: 2px solid #102A42;
+    color: white;
+    border-radius:2px;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #FFA500;
+    border-radius: 10px;
+    
+}
+
+.navigationButton:not(.inactive):hover{
+    background-color:#FFA500 ;
+    transition-duration: 0.4s;
+}
+
+.page{
+    color: white;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.inactive{
+    cursor: default;
+    color: gray;
+    border-color: gray;
+}
+
+@media only screen and (max-width: 767px) {
+    .output{
+        margin-top: 8%;
+    }
+}
