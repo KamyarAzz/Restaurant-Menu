@@ -34,20 +34,25 @@ This is a responsive restaurant menu website that features an elegant design and
 
 To get a local copy of the project up and running, follow these steps:
 
-```bash
-# Clone the repository
+1. Clone the repository
+```
 git clone https://github.com/KamyarAzz/Restaurant-Menu.git
-
-# Navigate to the project directory
-cd Restaurant Menu
-
-# Install the dependencies
+```
+2. Navigate to the project directory
+```
+cd Restaurant-Menu
+```
+3. Install the dependencies
+```
 npm install
-
-# Start the development server
+```
+4. Start the development server
+```
 npm run dev
-
-# Open your browser and go to http://localhost:5173
+```
+5. Open your browser and go to
+```
+http://localhost:5173
 ```
 
 ## Contributing
